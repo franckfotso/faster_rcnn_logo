@@ -6,16 +6,16 @@ Setup by Romuald FOTSO
 
 ## Introduction:
 
-This project aims to use the py_faster_rcnn tool to detect logo in real scene image. If your are interessed by the original project (python), please feel free to have a look [here](https://github.com/rbgirshick/py-faster-rcnn). We have setup a small dataset with only 20 classes, and launch a training with the VGG16 architecture. This repository involves all required files to launch a train or test process by your own. Indeed this page does not present the best model performance on own dataset, it just shows one more use case of the py_faster_rcnn project.
+This project aims to use the py_faster_rcnn tool to detect logo in real scene image. If your are interessed by the original project (python), please feel free to have a look [here](https://github.com/rbgirshick/py-faster-rcnn). We have setup a small dataset with only 20 classes, and launch a training with the VGG16 architecture. This repository involves all required files to launch a train or test process by your own. Indeed this page does not present the best model performance on our dataset, it just shows one more use case of the py_faster_rcnn project.
 
-![example](data/readme_img/example1.png)
+![example](data/readme_img/example1.jpg)
 
 ## Datasets:
 
 We have setup our own dataset (20 cls) based on pascal_voc schema.
 Required files are available here:
-  * [ROMYNY Logo 2016 : images+sets+annotations]()
-  * [ROMYNY Logo 2016 : labels]()
+  * [ROMYNY Logo 2016 : images+sets+annotations](https://drive.google.com/open?id=0B_Rjj_NgCayPS3NPamlydGZzcE0)
+  * [ROMYNY Logo 2016 : labels](https://drive.google.com/open?id=0B_Rjj_NgCayPUXplX0tEazdmNnM)
   
 ## Hardwares/Softwares:
     OS: Ubuntu 16.04 64 bit
@@ -77,10 +77,10 @@ To install this project, please follow the steps below:
     
 Get the data and models required:
 1. Download the data and uncompress in 'data'
-  * logo.20cls: [Google Drive]() -> data/VOCdevkit2007
+  * logo.20cls: [Google Drive](https://drive.google.com/open?id=0B_Rjj_NgCayPS3NPamlydGZzcE0) -> data/VOCdevkit2007
 
 2. Download the models and uncompress in 'data/logo_models'
-  * logo_models (VGG16): [Google Drive]() -> data/logo_models
+  * logo_models (VGG16): [Google Drive](https://drive.google.com/open?id=0B_Rjj_NgCayPRV9uWDhMM0lpcEk) -> data/logo_models
   * logo_models (RestNet-101): coming soon
   
 ## Experiments:
@@ -108,7 +108,7 @@ The model generated at the 30th iteration gives a mAP^0.5 = 0.6408
 
 All results related to demo dataset will be saved at 'data/demo_out'
 
-![example](data/readme_img/example2.png)
+![example](data/readme_img/example2.jpg)
 
 ## Contact
 
