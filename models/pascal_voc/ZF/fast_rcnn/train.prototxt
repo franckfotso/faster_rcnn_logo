@@ -11,8 +11,7 @@ layer {
   python_param {
     module: 'roi_data_layer.layer'
     layer: 'RoIDataLayer'
-    #param_str: "'num_classes': 21"
-    param_str: "'num_classes': 130"
+    param_str: "'num_classes': 21"
   }
 }
 
@@ -238,14 +237,14 @@ layer {
   }
 }
 layer {
-  name: "cls_score_logo"
+  name: "cls_score"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "cls_score_logo"
+  top: "cls_score"
   param { lr_mult: 1.0 }
   param { lr_mult: 2.0 }
   inner_product_param {
-    num_output: 130
+    num_output: 21
     weight_filler {
       type: "gaussian"
       std: 0.01
@@ -257,14 +256,14 @@ layer {
   }
 }
 layer {
-  name: "bbox_pred_logo"
+  name: "bbox_pred"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "bbox_pred_logo"
+  top: "bbox_pred"
   param { lr_mult: 1.0 }
   param { lr_mult: 2.0 }
   inner_product_param {
-    num_output: 520
+    num_output: 84
     weight_filler {
       type: "gaussian"
       std: 0.001
@@ -278,7 +277,7 @@ layer {
 layer {
   name: "loss_cls"
   type: "SoftmaxWithLoss"
-  bottom: "cls_score_logo"
+  bottom: "cls_score"
   bottom: "labels"
   propagate_down: 1
   propagate_down: 0
@@ -292,7 +291,7 @@ layer {
 layer {
   name: "loss_bbox"
   type: "SmoothL1Loss"
-  bottom: "bbox_pred_logo"
+  bottom: "bbox_pred"
   bottom: "bbox_targets"
   bottom: "bbox_inside_weights"
   bottom: "bbox_outside_weights"
