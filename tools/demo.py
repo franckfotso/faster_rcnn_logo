@@ -31,7 +31,7 @@ from os import listdir
 
 #'''
 CLASSES = ('__background__', # always index 0
-            # number of pamalogo classes: 20 + 1 bg
+            # number of logo classes: 20 + 1 bg
             'Adidas-Pict','Adidas-Text','Aldi','Allianz-Pict','Allianz-Text','Amazon','Apple',
             'Atletico_Madrid','Audi-Pict','Audi-Text','BMW','Burger_king','CocaCola','eBay',
             'Facebook-Pict','Facebook-Text','FC_Barcelona','FC_Bayern_Munchen','Ferrari-Pict','Ferrari-Text')
