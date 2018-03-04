@@ -104,7 +104,7 @@ Get the data and models required:
     ```
     
 ## Our results
-The model generated at the 30th iteration gives a mAP^0.5 = 0.6408
+The model generated at the 30kth iteration gives a mAP^0.5 = 0.7408
 
 All results related to demo dataset will be saved at 'data/demo_out'
 
