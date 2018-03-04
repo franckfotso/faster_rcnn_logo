@@ -2,11 +2,11 @@
 
 Application of faster_rcnn in logo detection case
 
-Setup by Romuald FOTSO
+Setup by Franck FOTSO
 
 ## Introduction:
 
-This project aims to use the py_faster_rcnn tool to detect logo in real scene image. If your are interessed by the original project (python), please feel free to have a look [here](https://github.com/rbgirshick/py-faster-rcnn). We have setup a small dataset with only 20 classes, and launch a training with the VGG16 architecture. This repository involves all required files to launch a train or test process by your own. Indeed this page does not present the best model performance on our dataset, it just shows one more use case of the py_faster_rcnn project.
+This project aims to use the py_faster_rcnn tool to detect logo in real scene image. If your are interessed by the original project (python), please feel free to have a look [here](https://github.com/rbgirshick/py-faster-rcnn). We have setup a small dataset with only 20 classes, and launch a training with the VGG16 architecture. This repository involves all required files to launch a train or test process by your own.
 
 ![example](data/readme_img/example1.jpg)
 
@@ -112,4 +112,4 @@ All results related to demo dataset will be saved at 'data/demo_out'
 
 ## Contact
 
-Please feel free to leave suggestions or comments to Romuald FOTSO (romyny9096@gmail.com)    
+Please feel free to leave suggestions or comments to Franck FOTSO (romyny9096@gmail.com)    
